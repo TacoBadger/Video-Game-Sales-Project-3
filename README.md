@@ -339,7 +339,7 @@ An **aggregate function** performs a calculation on a set of values, and returns
 
 ## Exporting the tables for Tableau
 All the tables that I have grouped with in the SSMS will be exported for tableau visualizations. You can to by typing in the query and save as the results as a csv file.
-![](https://github.com/TacoBadger/Video-Game-Sales/blob/main/Visuals/Exporting%20Tables.png?raw=true)
+![](https://public.tableau.com/views/GameSales1982-2021/GameSales1982-2021?:language=en-US&:display_count=n&:origin=viz_share_link)
 
 ## Key Findings
 ![](https://github.com/TacoBadger/Video-Game-Sales/blob/main/Visuals/Game%20Sales%20(1982-2021).png?raw=true)
@@ -354,3 +354,19 @@ Extras:
 2. Japan - **Pokemon Red/Pokemon Blue** on the top with **1,022 million sales** followed by **Super Mario Bros** with **696 million sales.**
 3. Europe - **Wii Sports** on the top with **2,902 million sales** followed by **Grand Theft Auto V** with **2,304 million sales.**
 4. Other Countries - **Grand Theft Auto: San Andreas** on the top with **1072 million sales** followed by **Wii Sports** with **846 million sales.**
+
+## Explore our Tableau Public
+- [@TacoBadger](https://public.tableau.com/app/profile/taco.badger)
+- [Game Sales (1982-2021)](https://public.tableau.com/app/profile/taco.badger/viz/GameSales1982-2021/GameSales1982-2021)
+- [Top Selling Games](https://public.tableau.com/app/profile/taco.badger/viz/TopSellingGames/TopSellingGames)
+
+## Explore our Notebook
+- [@TacoBadger](https://www.kaggle.com/cryptocosy)
+
+## What's next?
+We have finished our practice! It may be complicated at first but when you get to practice you might start understanding it a little better.
+- I could have also improved some of the groupings with better functions.
+- I could also practice more types of data charts or data visualizations in tableau by practicing how to relate some variables along with improving my dashboard a little more.
+- We can also practice more sales dataset with cryptocurrency datastets and other sales dataset to maximize using some of the grouping functions.
+
+Thank you for reading my kernel or repositories!
