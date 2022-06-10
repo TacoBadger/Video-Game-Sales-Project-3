@@ -28,7 +28,7 @@ We will manually upload the Dataset but you can also access the dataset in Kaggl
 - [What is Next?](#what-is-next)
 
 ## Motivation
-We will now use Microsoft SQL to practice my Data Analysis with this public dataset,again it is okay to work with just one tool but for us we will be practicing in different tools to expand our knowledge, it is not required but you can always choose yourself.
+We will now use Microsoft SQL to practice my Data Analysis with this public dataset, again it is okay to work with just one tool but for us we will be practicing in different tools to expand our knowledge, it is not required but you can always choose yourself.
 
 This practice is done with the use of [Microsoft SQL Management Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads). Microsoft SQL Server is a relational database management system (RDBMS) that supports a wide variety of transaction
 
