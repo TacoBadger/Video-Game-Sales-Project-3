@@ -242,7 +242,6 @@ group by Name
 order by 2 desc
 ```
 The query will return 10 rows with again **Wii Sports** on the top with **4149 million sales** followed by **Super Mario Bros** with **2942 million sales.**
-## North America Sales
 | Name        	    | Sales        	    |            	
 |-------------------|-------------------|
 | Wii sports           	| 4149 |
