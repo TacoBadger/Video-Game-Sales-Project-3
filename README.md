@@ -105,7 +105,7 @@ select * from [dbo].[vgsales]
 
 The query will return 16,328 rows with 11 columns.
 
-## Checking Unique columns and values
+## Checking unique columns and values
 Checking the rows columns for unique variables that can be really nice to plot.
 
 In this example we will select unique values and check columns we want to work with.
@@ -155,3 +155,65 @@ select distinct Publisher from [dbo].[vgsales]
 # 577 rows of publisher
 ```
 You can now get a better overview of the columns we need. The data is quite easy to work with and we can also get started with the analysis too.
+
+## Let's do some Data Analysis and Groupings
+Let's start grouping them by:
+- SALES
+- YEAR
+- GAMES
+- GENRE
+- COMPANIES
+
+Start with the most basic query with SELECT and FROM. In this analysis we will also use GROUP BY and COUNT.
+- COUNT(ALL expression) evaluates expression for each row in a group, and returns the number of nonnull values.
+- The GROUP BY clause is an optional clause of the SELECT statement. The GROUP BY clause a selected group of rows into summary rows by values of one or more columns. The GROUP BY clause returns one row for each group.
+
+Let's start to group them by **"Which genre has been produced the most?"**
+```bash
+select Genre, count(Genre) as Produced
+from [dbo].[vgsales]
+group by Genre
+order by 2 desc # the 2 in this order by means to order them by total counts of genres
+```
+This will show 12 rows with **action**** as the top genre **3,253** are classified as action games followed by **sports** with **2,305** games and the least to be **puzzle** with **571** games.
+| Genre        	    | Number        	    |            	
+|-------------------|-------------------|
+| Action           	| 3253 |
+| Sports            | 2305 |
+| Misc              | 1710 |
+| Role-Playing      | 1471 |
+| Shooter           | 1282 |
+| Adventure         | 1276 |
+| Racing            | 1226 |
+| Platform          | 876  |
+| Simulation        | 851  |
+| Fighting          | 836  |
+| Strategy          | 671  |
+| Puzzle            | 571  |
+
+Then we wanted to group them by **"Which year has the most game release?"**
+```bash
+select Year, count(Global_Sales) as Total_Sales
+from [dbo].[vgsales]
+group by Year
+order by 2 desc
+```
+This query will return 39 rows showing **2009** is the year with the most game released with a total of **1,431** games released in the public followed by **2008** with **1,428** games released. The year **2009** is the golder period of gamers.
+
+Then let's group the **top 20 companies to release the most games.**
+```bash
+select TOP 20 Publisher, count(Name) as Games
+from [dbo].[vgsales]
+group by Publisher
+order by 2 desc
+```
+The query will return 20 rows with **Electronic Arts** on top with **1,340** games produced, I do love their Sims game and it is quite known and famous! So no wonder Electronic Arts are on top followed by **Activision** with **966** games released and **Microsoft Game Studios** with the least games released.
+
+Then lastly we wanted to group them by the **top 10 games most sold worldwide!**
+```bash
+select TOP 10 Name, sum(Global_Sales) as Global_Total
+from [dbo].[vgsales]
+group by Name
+order by 2 desc
+```
+The query will return 10 rows with **Wii Sports** on top with sales about **8274 million!** I've also wanted to try wii sports rather than going to the gym! Followed by **Super Mario Bros** with **4531 million sales!** which is kind of really popular to twitch streamers and for multiplayers!
