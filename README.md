@@ -338,7 +338,7 @@ An **aggregate function** performs a calculation on a set of values, and returns
 - Limits the return of rows in the query (SELECT TOP 10)
 
 ## Exporting the tables for Tableau
-All the tables that I have grouped with in the SSMS will be exported for tableau visualizations. You can to by typing in the query and save as the results as a csv file.
+All the tables that I have grouped with in the SSMS will be exported for tableau visualizations. You can also do that by typing in the query and save as the results as a csv file.
 
 ![](https://github.com/TacoBadger/Video-Game-Sales/blob/main/Visuals/Exporting%20Tables.png?raw=true)
 
