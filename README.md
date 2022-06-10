@@ -175,7 +175,7 @@ from [dbo].[vgsales]
 group by Genre
 order by 2 desc # the 2 in this order by means to order them by total counts of genres
 ```
-This will show 12 rows with **action**** as the top genre **3,253** are classified as action games followed by **sports** with **2,305** games and the least to be **puzzle** with **571** games.
+This will show 12 rows with **action** as the top genre **3,253** are classified as action games followed by **sports** with **2,305** games and the least to be **puzzle** with **571** games.
 | Genre        	    | Number        	    |            	
 |-------------------|-------------------|
 | Action           	| 3253 |
@@ -217,3 +217,127 @@ group by Name
 order by 2 desc
 ```
 The query will return 10 rows with **Wii Sports** on top with sales about **8274 million!** I've also wanted to try wii sports rather than going to the gym! Followed by **Super Mario Bros** with **4531 million sales!** which is kind of really popular to twitch streamers and for multiplayers!
+| Name        	    | Sales        	    |            	
+|-------------------|-------------------|
+| Wii Sports           	| 8274 |
+| Super Mario Bros.            | 4531 |
+| Grand Theft Auto V              | 3666 |
+| Tetris      | 3584 |
+| Mario Kart Wii           | 3582 |
+| Pokemon Red/Pokemon Blue         | 3137 |
+| Call of Duty: Modern Warfare 3            | 3083 |
+| New Super Mario Bros.          | 3001  |
+| Call of Duty: Black Ops II        | 2972  |
+| Wii Play          | 2902  |
+
+## Extra Analysis
+We will also use the same the queries for grouping based on sales in North America, Europe, Japan and Other countries.
+
+**Which top 10 games is the most sold in North America?**
+```bash
+select TOP 10 Name, sum(NA_Sales) as NA_Total
+from [dbo].[vgsales]
+group by Name
+order by 2 desc
+```
+The query will return 10 rows with again **Wii Sports** on the top with **4149 million sales** followed by **Super Mario Bros** with **2942 million sales.**
+## North America Sales
+| Name        	    | Sales        	    |            	
+|-------------------|-------------------|
+| Wii sports           	| 4149 |
+| Super Mario Bros.     | 2942 |
+| Duck Hunt             | 2693 |
+| Grand Theft Auto V    | 2004 |
+| Call of Duty: Black Ops   | 1701 |
+| Super Mario World         | 1599 |
+| Mario Kart Wii            | 1585 |
+| Wii Sports Resort         | 1575  |
+| Call of Duty: Modern Warfare 3    | 1504  |
+| Kinect Adventures!        | 1497  |
+
+**Which top 10 games is the most sold in Japan?**
+```bash
+select TOP 10 Name, sum(JP_Sales) as JP_Total
+from [dbo].[vgsales]
+group by Name
+order by 2 desc
+```
+The query will return 10 rows with again **Pokemon Red/Pokemon Blues** on the top with **1022 million sales** followed by **Super Mario Bros** with **696 million sales.**
+| Name        	    | Sales        	    |            	
+|-------------------|-------------------|
+| Pokemon Red/Pokemon Blue          	| 1022 |
+| Super Mario Bros.   | 696 |
+| Pokemon Diamond/Pokemon Pearl       | 604 |
+| Tetris               | 603 |
+| Pokemon Black/Pokemon White   | 565 |
+| Pokemon Ruby/Pokemon Sapphire           | 538 |
+| Animal Crossing: Wild World           | 533 |
+| Brain Age 2: More Training in Minutes a Day  | 532  |
+| Final Fantasy III  | 512  |
+| Nonster Hunter Freedom 3      | 487  |
+
+**Which top 10 games is the most sold in Europe?**
+```bash
+select TOP 10 Name, sum(EU_Sales) as EU_Total
+from [dbo].[vgsales]
+group by Name
+order by 2 desc
+```
+The query will return 10 rows with again **Wii Sports** on the top with **2902 million sales** followed by **Grand Theft Auto V** with **2304 million sales.**
+| Name        	    | Sales        	    |            	
+|-------------------|-------------------|
+| Wii sports           	| 2902 |
+| Grand Theft Auto V    | 2304 |
+| Mario Kart Wii        | 1288 |
+| FIFA 15               | 1240 |
+| Call of Duty: Modern Warfare 3   | 1129 |
+| FIFA 16            | 1299 |
+| FIFA 14            | 1114 |
+| Wii Sports Resort  | 1101  |
+| Fifa Soccer 13  | 980  |
+| The Sims 3      | 960  |
+
+**Which top 10 games is the most sold in Other Countries?**
+```bash
+select TOP 10 Name, sum(Other_Sales) as Other_Total
+from [dbo].[vgsales]
+group by Name
+order by 2 desc
+```
+The query will return 10 rows with **Grand Theft Auto: San Andreas** on the top with **1072 million sales** followed by **Wii Sports** with **846 million sales.** I guess some of the countries don't own a Wii.
+| Name        	    | Sales        	    |            	
+|-------------------|-------------------|
+| Grand Theft Auto: San Andreas  | 1072 |
+| Wii Sports                     | 846  |
+| Grand Theft Auto V             | 803  |
+| Gran Turismo 4                 | 753  |
+| Call of Duty: Black Ops II     | 388  |
+| FIFA Soccer 08                 | 353  |
+| Pro Evolution Soccer 2008      | 351  |
+| Call of Duty: Black Ops 3      | 342  |
+| Call of Duty: Modern Warfare 3 | 335  |
+| Mario Kart Wii                 | 331  |
+
+## Our Query Run order and Functions
+Now that we are familiar with most of the functionalities being used in a query, it is very important to understand the order that code runs.
+
+We also used a few aggregate functions including all the functions mentioned below.
+
+An **aggregate function** performs a calculation on a set of values, and returns a single value. Except for COUNT(*) , aggregate functions ignore null values. Aggregate functions are often used with the GROUP BY clause of the SELECT statement.
+- SELECT
+- FROM
+- WHERE
+- GROUP BY
+- ORDER BY
+- SELECT TOP 10
+
+- Define which tables to use (FROM)
+- Keep only the rows that apply to the conditions (WHERE)
+- Group the data by the required level (if need) (GROUP BY)
+- Order the output of the new table (ORDER BY)
+- Limits the return of rows in the query (SELECT TOP 10)
+
+## Exporting the tables for Tableau
+All the tables that I have grouped with in the SSMS will be exported for tableau visualizations. You can to by typing in the query and save as the results as a csv file.
+![](https://github.com/TacoBadger/Video-Game-Sales/blob/main/dataset.png?raw=true)
+
