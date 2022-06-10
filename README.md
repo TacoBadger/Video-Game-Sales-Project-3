@@ -363,7 +363,7 @@ Extras:
 ## Explore our Notebook
 - [@TacoBadger](https://www.kaggle.com/code/cryptocosy/video-game-analysis-using-ssms)
 
-## What's next?
+## What is Next?
 We have finished our practice! It may be complicated at first but when you get to practice you might start understanding it a little better.
 - I could have also improved some of the groupings with better functions.
 - I could also practice more types of data charts or data visualizations in tableau by practicing how to relate some variables along with improving my dashboard a little more.
