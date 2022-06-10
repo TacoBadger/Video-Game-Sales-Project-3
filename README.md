@@ -41,6 +41,9 @@ So here the few things I want to know in this dataset:
 - Top Companies to produce Games.
 - Games Released by Year.
 
+Extras:
+- Top selling games in North America, Europe, Japan and Other countries.
+
 ## Importing the dataset from Kaggle to see what tables we have in the dataset
 I always start of to downloading the [dataset](https://www.kaggle.com/datasets/gregorut/videogamesales)
 it will always appear as a zip file but you can extract and import it.
@@ -73,8 +76,6 @@ Then you create your own database and follow the tutorial on how to import the f
 Double check to make sure you have the same fields too, so you don't encounter any problems or errors too. 
 
 As soon as you imported the data you can get an overview by doing the common query **SELECT** and **FROM**.
-Extras:
-- Top selling games in North America, Europe, Japan and Other countries.
 
 ## Important Definitions
 **SQL Server**, often pronounced 'Sequel Server,' is not a bad sequel to an already bad movie. Far from it: It is a very powerful system that can be used in organizations of varying sizes, from small businesses to major corporations.
