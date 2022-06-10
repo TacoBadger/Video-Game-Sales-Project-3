@@ -339,5 +339,18 @@ An **aggregate function** performs a calculation on a set of values, and returns
 
 ## Exporting the tables for Tableau
 All the tables that I have grouped with in the SSMS will be exported for tableau visualizations. You can to by typing in the query and save as the results as a csv file.
-![](https://github.com/TacoBadger/Video-Game-Sales/blob/main/dataset.png?raw=true)
+![](https://github.com/TacoBadger/Video-Game-Sales/blob/main/Visuals/Exporting%20Tables.png?raw=true)
 
+## Key Findings
+![](https://github.com/TacoBadger/Video-Game-Sales/blob/main/Visuals/Game%20Sales%20(1982-2021).png?raw=true)
+1. **Action** was the most the most popular Genre it was produced **3,253** times from **19820-2021!**
+2. The peak year where most games were released was **2009** with **1,431** games released in a single year. The golden period for gamers began at **2007 to 2010** but it started to fall slowly because hyptothetically this may have been affected by Covid-19 slowing down all production rates and it can also affect Global Sales.
+3. The top company to produce most games in the period of **1982 to 2022** was **Electornic Arts** with a total of **1,351** games released to the public.
+4. And lastly! top sellings games were **Wii Sports which has 8,274 million sales and Super Mario Bros with 4,531 million sales.** This games are popular by streamers and people who love to play multiplayer games!
+
+Extras:
+![](https://github.com/TacoBadger/Video-Game-Sales/blob/main/Visuals/Top%20Selling%20Games.png?raw=true)
+1. North America - **Wii Sports** on the top with **4,149 million sales** followed by **Super Mario Bros** with **2,942 million sales.**
+2. Japan - **Pokemon Red/Pokemon Blue** on the top with **1,022 million sales** followed by **Super Mario Bros** with **696 million sales.**
+3. Europe - **Wii Sports** on the top with **2,902 million sales** followed by **Grand Theft Auto V** with **2,304 million sales.**
+4. Other Countries - **Grand Theft Auto: San Andreas** on the top with **1072 million sales** followed by **Wii Sports** with **846 million sales.**
