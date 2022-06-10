@@ -361,7 +361,7 @@ Extras:
 - [Top Selling Games](https://public.tableau.com/app/profile/taco.badger/viz/TopSellingGames/TopSellingGames)
 
 ## Explore our Notebook
-- [@TacoBadger](https://www.kaggle.com/cryptocosy)
+- [@TacoBadger](https://www.kaggle.com/code/cryptocosy/video-game-analysis-using-ssms/edit/run/97989680)
 
 ## What's next?
 We have finished our practice! It may be complicated at first but when you get to practice you might start understanding it a little better.
