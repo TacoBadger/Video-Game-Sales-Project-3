@@ -339,7 +339,7 @@ An **aggregate function** performs a calculation on a set of values, and returns
 
 ## Exporting the tables for Tableau
 All the tables that I have grouped with in the SSMS will be exported for tableau visualizations. You can to by typing in the query and save as the results as a csv file.
-![](https://public.tableau.com/views/GameSales1982-2021/GameSales1982-2021?:language=en-US&:display_count=n&:origin=viz_share_link)
+![](https://github.com/TacoBadger/Video-Game-Sales/blob/main/Visuals/Exporting%20Tables.png?raw=true)
 
 ## Key Findings
 ![](https://github.com/TacoBadger/Video-Game-Sales/blob/main/Visuals/Game%20Sales%20(1982-2021).png?raw=true)
