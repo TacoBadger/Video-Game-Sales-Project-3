@@ -370,4 +370,4 @@ We have finished our practice! It may be complicated at first but when you get t
 - I could also practice more types of data charts or data visualizations in tableau by practicing how to relate some variables along with improving my dashboard a little more.
 - We can also practice more sales dataset with cryptocurrency datastets and other sales dataset to maximize using some of the grouping functions.
 
-Thank you for reading my kernel or repositories!
+Thank you for reading my case study!
